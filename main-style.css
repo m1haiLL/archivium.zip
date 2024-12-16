@@ -1,0 +1,101 @@
+        /* DOTO FONT */
+/*      
+    font-family: "Doto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "ROND" 0; 
+*/
+
+
+* {
+    background-color: rgb(8, 8, 8);
+    color: beige;
+}
+
+html {
+    padding: 1vh;
+
+
+
+}
+
+.top-part {
+
+    font-family: "Doto", serif;
+    font-optical-sizing: auto;
+    /* font-weight: 600; */
+    font-style: normal;
+    font-variation-settings:
+    "ROND" 0; 
+
+    padding: 2vh;
+    border: 2px solid beige;
+    border-radius: 1vh;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: onStart;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+
+}
+
+.top-part > h1 {
+    font-size: 3vh;
+    font-weight: 600;
+    text-align: center;
+    z-index: 2;
+    background: none;
+
+
+    /* margin-top: 40vh; */
+}
+
+.top-part > h2 {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    font-size: 12vh;
+    color: rgba(245, 245, 220, 0.03);
+    background: none;
+    z-index: 0;
+    position: fixed;
+    padding-bottom: 1vh;
+}
+
+.auto-type {
+    background: none;
+}
+
+.top-part > video {
+    z-index: 1;
+    position: fixed;
+    align-content: center;
+    height: 120vh;
+    width: 120vh;
+}
+
+.top-part > p {
+    bottom: 1vh;
+    font-weight: 500;
+    font-size: larger;
+    position: fixed;
+    text-align: center;
+    font-style: italic;
+}
+
+video {
+    background-color: transparent;
+    pointer-events: none;
+}
+
+@keyframes onStart {
+    0% {opacity: 0%;};
+    50% {opacity: 50%;};
+    100% {opacity: 100%;};
+}
